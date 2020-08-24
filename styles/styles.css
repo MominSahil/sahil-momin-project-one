@@ -1,0 +1,546 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+body,
+p,
+h1,
+h2,
+ul,
+span,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+     font-size: 62.5%;
+}
+
+body {
+     max-width: 1400px;
+     color: #fff;
+     font-family: 'Offside', cursive;
+     font-size: 2rem;
+     line-height: 3rem;
+     font-weight: 400;
+     margin: 0 auto;
+}
+
+.wrapper {
+     width: 85%;
+     max-width: 1250px;
+     margin: 0 auto;
+}
+
+img {
+     width: 100%;
+     height: auto;
+     display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+     text-decoration: none;
+     color: #fff;
+     font-family: 'Offside', cursive;
+}
+
+p {
+     font-family: 'Barlow', sans-serif;
+}
+
+h2,
+h3 {
+     font-weight: 400;
+}
+
+h2 {
+     font-size: 4.2rem;
+}
+
+/* Start of header */
+header {
+     height: 90vh;
+     background: url(../assets/header-image.png);
+     background-size: cover;
+     background-position: calc(50% + 8vw) center;
+     padding-top: 2rem;
+}
+
+.logo{
+     float: left;
+     width: calc(5rem + 1vw);
+     max-width: 15rem;
+     font-size: 2rem;
+     font-weight: 400;
+     line-height: 2rem;
+     text-transform: capitalize;
+}
+
+nav li {
+     float: right;
+}
+
+label[for="toggle"],
+input[name="toggle"] {
+     display: none;
+}
+
+nav li a {
+     padding: 0.5rem 1rem;
+     margin-left: 1rem;
+     transition: all 0.3s ease-in-out;
+     font-family: 'Barlow', sans-serif;
+}
+
+nav li a:hover,
+nav li a:focus,
+.socialMediaIcons a:hover,
+.socialMediaIcons a:focus,
+.blog a:hover,
+.blog a:focus,
+footer ul a:hover,
+footer ul a:focus {
+     background-color: #D6F1E4;
+     color: #2C202C;
+}
+
+.h1AndIcons {
+     margin-top: 5rem;
+     position: relative;
+}
+
+h1 {
+     width: 46%;
+     font-size: 6.88rem;
+     line-height: 6.37rem;
+     letter-spacing: 0.08rem;
+     font-weight: 400;
+     font-family: 'Barlow', sans-serif;
+}
+
+.socialMediaIcons {
+     position: absolute;
+     text-align: center;
+     top: 0;
+     right: -5%;
+}
+
+.socialMediaIcons li {
+     margin: 1rem 0;
+}
+
+.socialMediaIcons a {
+     display: inline-block;
+     width: 4rem;
+     padding: 0.5rem;
+     transition: all 0.3s ease-in-out;
+     border-radius: 1rem;
+}
+
+/* start of .about section */
+.about {
+     background-color: #D6F1E4;
+     padding-bottom: 5rem;
+}
+
+.about h2 {
+     color: #116500;
+}
+
+.aboutHeading {
+     padding: 5rem;
+     text-transform: capitalize;
+     text-align: center;
+}
+
+.gallery li {
+     float: left;
+     width: 31%;
+     height: auto;
+     margin-right: 3.5%;
+}
+
+.gallery li:last-of-type {
+     margin-right: 0;
+}
+
+.aboutPark {
+     margin-top: 5rem;
+}
+
+.aboutPark img {
+     float: left;
+     width: 25%;
+     margin-right: 3.5%;
+}
+
+.aboutPark div {
+     float: right;
+     width: 71.5%;
+}
+
+.aboutPark div p {
+     padding: 2rem 0;
+     color: #2C2D2C;
+}
+
+.aboutPark a {
+     padding: 1rem;
+     background-color: #116500;
+     transition: all 0.3s ease-in-out;
+}
+
+.aboutPark a:hover,
+.aboutPark a:focus {
+     background-color: #3bc220;
+     color: #213C28;
+}
+
+/* start of .blog section */
+.blog {
+     background-color: #213C28;
+}
+
+.blog1,
+.blog2 {
+     position: relative;
+}
+
+.blog1 img {
+     float: right;
+     width: 50%;
+}
+
+.blog2 img {
+     float: left;
+     width: 50%;
+}
+
+.blog1Text,
+.blog2Text {
+     width: 50%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     margin: 10px 0;
+     padding: 0 7.5%;
+}
+
+.blog2Text {
+     left: 50%;
+}
+
+.blog p {
+     padding: 2rem 0 3rem 0;
+}
+
+.blog a {
+     padding: 1rem;
+     background-color: #FFF;
+     color: #116500;
+     text-transform: uppercase;
+     transition: all 0.3s ease-in-out;
+     /* hover/focus effects with header nav a */
+}
+
+/* start of .events section */
+.events {
+     background-color: #D6F1E4;
+     text-align: center;
+     padding: 0 12.5%;
+}
+
+.events li {
+     float: left;
+     margin: 5rem 0;
+     width: 33.33%;
+}
+
+
+.events a {
+     padding: 0.5rem;
+     color: #116500;
+     border-radius: 10px;
+     display: block;
+     transition: all 0.3s ease-in-out;
+}
+
+.events li a:hover,
+.events li a:focus {
+     background-color: #116500;
+     color: #FFF;
+}
+
+.events i {
+     display: block;
+     color: #2C2D2C;
+     font-size: 3.2rem;
+}
+
+.events span {
+     padding: 0.5rem;
+}
+
+/* start of footer */
+footer {
+     background-color: #213C28;
+     padding: 5rem 0;
+}
+
+.subscription {
+     float: left;
+     width: 50%;
+}
+
+form {
+     padding: 2rem 0;
+}
+
+.hidden{
+     display: none;
+}
+
+.subscription input {
+     float: left;
+     width: 70%;
+     padding: 0.5rem 1rem;
+     border: none;
+     font-family: 'Offside', cursive;
+     transition: all 0.3s ease-in-out;
+}
+
+.subscription input:hover,
+.subscription input:focus,
+.subscription input:active {
+     background-color: #D6F1E4;
+     color: #2C2D2C;
+}
+
+.subscription button {
+     width: 30%;
+     padding: 0.5rem 1rem;
+     border: none;
+     background-color: #2C2D2C;
+     color: #FFF;
+     font-family: 'Offside', cursive;
+     text-transform: uppercase;
+     transition: all 0.3s ease-in-out;
+}
+
+.subscription button:hover,
+.subscription button:focus {
+     background-color: #116500;
+}
+
+.contact {
+     float: left;
+     width: 32%;
+     padding-left: 5%;
+}
+
+footer ul {
+     float: right;
+     width: 11%;
+     padding-left: 2%;
+     text-align: right;
+}
+
+.events li:hover i,
+.events li:focus-within i {
+     color: #FFF;
+}
+
+
+footer ul a {
+     padding: 0.5rem 1rem;
+     transition: all 0.3s ease-in-out;
+     /* hover focus effect with header nav a */
+}
+
+.copyright {
+     background-color: #2C2D2C;
+     font-family: 'Barlow', sans-serif;
+     text-align: center;
+}
+
+.copyright a {
+     display: inline-block;
+     padding: 1rem 0.5rem;
+     border-radius: 10px;
+     color: #ea593e;
+     transition: all 0.3s ease-in-out;
+}
+
+.copyright a:hover,
+.copyright a:focus {
+     background-color: #ea593e;
+     color: #FFF;
+}
+
+
+/* start of media queries */
+
+@media (max-width: 1024px) {
+     /* making all fonts responsive */
+     body {
+          font-size: calc(0.86rem + 1.14vw);
+          line-height: calc(2rem + 1.43vw);
+     }
+     .logo {
+          font-size: calc(1.2rem + 0.8vw);
+          line-height: calc(1.2rem + 0.8vw);
+     }
+     h1 {
+          font-size: calc(1.53rem + 5.2vw);
+          line-height: calc(1.46rem + 4.79vw);
+     }
+     h2 {
+          font-size: calc(1.3rem + 2.84vw);
+     }
+     .events i {
+          font-size: calc(1.46rem + 1.7vw);
+     }
+
+     .socialMediaIcons {
+          display: none;
+     }
+     
+     .blog1 img,
+     .blog2 img {
+          float: none;
+          width: 100%;
+          height: 75vw;
+          max-height: 100vh;
+     }
+     
+     .blog1Text,
+     .blog2Text {
+          position: static;
+          width: 100%;
+          margin: 0;
+          padding: 2rem 7.5%;
+          transform: translate(0);
+     }
+}
+
+@media (max-width: 834px) {
+     .h1AndIcons {
+          margin-top: 3rem;
+     }
+
+     .aboutPark img {
+          display: none;
+      }
+      .aboutPark div {
+          float: none;
+          width: 100%;
+      }
+
+     .subscription {
+          float: none;
+          width: 100%;
+          text-align: center;
+     }
+     .contact {
+          width: 65%;
+          padding-left: 0;
+          padding-right: 2.5%;
+     }
+     footer ul {
+          width: 30%;
+          padding-left: 2.5%;
+     }
+
+}
+
+@media (max-width: 564px) {
+     header {
+          max-height: 100vw;
+          background-position: 25% center;
+     }
+     h1 {
+          width: 60%;
+     }
+     nav li {
+          display: none;
+     }
+     nav li:first-of-type {
+          display: block;
+          padding: 0.5rem 1rem;
+          border-radius: 10px;
+          transition: all 0.3s ease-in-out;
+     }
+     label[for="toggle"] {
+          display: block;
+     }
+     nav li:first-of-type:hover,
+     nav li:first-of-type:focus-within {
+          background-color: #D6F1E4;
+          color: #2C2D2C;
+          transition: all 0.3s ease-in-out;
+     }
+     
+     .gallery li {
+          width: 47.5%;
+          height: auto;
+          margin: 0;
+      }
+      .gallery li:nth-of-type(2n) {
+           float: right;
+      }
+      .gallery li:last-of-type {
+           float: left;
+           width: 100%;
+           margin: 5rem 0;
+      }
+      .gallery li:last-of-type img {
+           height: 75vw;
+      }
+
+      h2 {
+           text-align: center;
+      }
+
+      .aboutPark div,
+      .blog1Text,
+      .blog2Text {
+           text-align: center;
+      }
+      .aboutPark p,
+      .blog1Text p,
+      .blog2Text p {
+           text-align: left;
+      }
+
+      .events {
+           padding: 2rem 0;
+      }
+      .events ul {
+           text-align: center;   
+      }
+      .events li {
+          float: none;
+          margin: 2rem auto;
+      }
+
+     .subscription input {
+          text-align: center;
+          float: none;
+          width: 100%;
+     }
+     .subscription button {
+          width: 50%;
+          margin-top: 1rem;
+     }
+}
